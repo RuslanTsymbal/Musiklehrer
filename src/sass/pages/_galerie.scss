@@ -1,0 +1,33 @@
+.fotos {
+  background-color: white;
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+.fotos__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.fotos__item {
+  width: 23%;
+  margin-bottom: 30px;
+
+  @include max-w(1024px) {
+    width: 30%;
+  }
+
+  @include max-w(900px) {
+    width: 45%;
+  }
+
+  @include max-w(767px) {
+    width: 100%;
+  }
+
+  img {
+    width: 100%;
+    overflow: hidden;
+   }
+}
